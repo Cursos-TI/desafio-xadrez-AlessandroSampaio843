@@ -11,6 +11,12 @@ int main() {
     const int casasBispo = 5;
     const int casasRainha = 8;
 
+    // DEFINIÇÃO DAS VARIÁVEIS DO CAVALO (Isso resolve o erro de identificação)
+    int movimentoVertical = 2;   // Duas casas para baixo
+    int movimentoHorizontal = 1; // Uma casa para a esquerda
+
+    printf("### Desafio de Xadrez - Movimentacao ###\n\n");
+
     printf("### Desafio de Xadrez - Movimentacao ###\n\n");
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
@@ -40,6 +46,20 @@ int main() {
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+    printf("\nMovimento do Cavalo:\n");
+
+    for (int i = 1; i <= 1; i++) { // Loop principal (executa uma vez o conjunto do movimento)
+        int j = 1;
+        while (j <= movimentoVertical) { // Loop para as casas para baixo
+            printf("Baixo\n");
+            j++;
+        }
+        
+        int k = 1;
+        while (k <= movimentoHorizontal) { // Loop para a casa para a esquerda
+            printf("Esquerda\n");
+            k++;
+        }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
